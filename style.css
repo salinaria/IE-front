@@ -2,9 +2,9 @@
 
 :root{
   --margin-all: 20px;
-  --margin-in : 10px;
+  --margin-in : 50px;
   --padding: 20px;
-  --c1 : #edf2f4;
+  --c1 : rgb(237, 242, 244);
   --c2 : #e63946;
   --c3 : #457b9d;
   --c4 : #2b2d42;
@@ -16,6 +16,7 @@
   
   body{
     background-color: var(--c1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .header{
@@ -28,20 +29,20 @@
   }
   .header-text-big{
     color:aliceblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     white-space: nowrap;
-    animation: headerani 5s 1;
+    animation: headerani;
+    animation-duration: 4s;
     position: relative;
-    animation-delay: -2s;
+    animation-delay: 0s;
     font-size: 60px;
   }
   .header-text-small{
     color:aliceblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     white-space: nowrap;
-    animation: headerani 5s 1;
+    animation: headerani;
+    animation-duration: 6s;
     position: relative;
-    animation-delay: -2s;
+    animation-delay: 0s;
     font-size: 30px;
   }
 
@@ -55,10 +56,11 @@
     border: 0px;
     color: var(--c4);
     padding: var(--padding);
-    margin: var(--margin-in);
-    animation: headerani 5s 1;
+    margin: var(--margin-all);
+    animation: headerani;
+    animation-duration: 8s;
     position: relative;
-    animation-delay: -2s;
+    animation-delay: 0s;
     border-radius: 10px;
   }
   .header-button:hover{
@@ -104,9 +106,13 @@
   
   .box_4 {
     float: left;
-    width: calc(25% - 20px);
+    width: calc(25%);
     padding: 20px;
     margin: var(--margin-in);
-    background-color:var(--c3);
+    border-radius: 10px;
+    background-color:rgb(237, 242, 244,0.8);;
     color: var(--c4);
   }  
+  .box_4:hover{
+    transform:translateY(-15px);
+  }
