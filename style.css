@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+:root{
+  --margin-all: 20px;
+  --margin-in : 10px;
+  --padding: 20px;
+  --c1 : #edf2f4;
+  --c2 : #e63946;
+  --c3 : #457b9d;
+  --c4 : #2b2d42;
+}
+
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: var(--c1);
+  }
+  
+  .header{
+    padding: 50px;
+    text-align: center;
+    margin: var(--margin-all);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .header-text-big{
+    color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+    animation: headerani 5s 1;
+    position: relative;
+    animation-delay: -2s;
+    font-size: 60px;
+  }
+  .header-text-small{
+    color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+    animation: headerani 5s 1;
+    position: relative;
+    animation-delay: -2s;
+    font-size: 30px;
+  }
+
+  @keyframes headerani {
+    from {left: calc(-200%);}
+    to {left: 0px;}
+  }
+
+  .header-button{
+    background-color: var(--c1);
+    border: 0px;
+    color: var(--c4);
+    padding: var(--padding);
+    margin: var(--margin-in);
+    animation: headerani 5s 1;
+    position: relative;
+    animation-delay: -2s;
+    border-radius: 10px;
+  }
+  .header-button:hover{
+    background-color: var(--c3);
+    color: var(--c1);
+    border: 0px;
+  }
+
+  .main{
+    background-color:var(--c4);
+    padding: 10px;
+    margin: var(--margin-all);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer {
+    background-color:var(--c2) ;
+    padding: 10px;
+    margin: var(--margin-all);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box_2 {
+    float: left;
+    width: calc(50% - 20px);
+    margin: var(--margin-in);
+    padding: 20px;
+    margin-bottom: 0px;
+    background-color:var(--c1);
+    color: var(--c2);
+  }
+  
+  .box_3 {
+    float: left;
+    width: calc(33.3% - 20px);
+    padding: 20px;
+    margin: var(--margin-in);
+    background-color:var(--c3);
+    color: var(--c4);
+  }
+  
+  .box_4 {
+    float: left;
+    width: calc(25% - 20px);
+    padding: 20px;
+    margin: var(--margin-in);
+    background-color:var(--c3);
+    color: var(--c4);
+  }  
