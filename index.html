@@ -8,68 +8,131 @@
   </head>
 
   <body>
-    <div class="header" style="background-color: #2b2d42">
-      <div class="header-text-big">I N T E R N E T</div>
-      <div class="header-text-big">E N G I N E E R I N G</div>
-      <div class="header-text-small">IS WHAT WE ARE GOING TO</div>
-      <div class="header-text-small">LEARN IN THIS COURSE</div>
-      <button class="header-button">SEE THIS COURSE RELATED BOOKS</button>
-    </div>
-
-    <div class="main" style="background-image: url('./assests/image.png');
-    background-repeat: no-repeat;
-    background-size: cover;">
-      <div class="box_4">
-        <h1 style="text-align: center">HTTP</h1>
-        <p style="text-align: center" >
-          The Hypertext Transfer Protocol (HTTP) is an application layer
-          protocol in the Internet protocol suite model for distributed,
-          collaborative, hypermedia information systems. HTTP is the
-          foundation of data communication for the World Wide Web, where
-          hypertext documents include hyperlinks to other resources that the
-          user can easily access, for example by a mouse click or by tapping the
-          screen in a web browser.
-        </p>
+    <div class="after-button">
+      <!--- HEADER --->
+      <div class="header" style="background-color: #2b2d42">
+        <div class="header-text-big">I N T E R N E T</div>
+        <div class="header-text-big">E N G I N E E R I N G</div>
+        <div class="header-text-small">IS WHAT WE ARE GOING TO</div>
+        <div class="header-text-small">LEARN IN THIS COURSE</div>
+        <button class="header-button">SEE THIS COURSE RELATED BOOKS</button>
       </div>
 
-      <div class="box_4">
-        <h1 style="text-align: center">HTML CSS</h1>
-        <p>Some text inside the box.</p>
+      <!-- LECTURES -->
+      <div
+        class="main"
+        style="
+          background: linear-gradient(
+              to bottom right,
+              rgba(213, 51, 213, 0.7),
+              rgb(0, 0, 255, 0.7),
+              rgba(128, 0, 6, 0.7)
+            ),
+            url('./assests/image.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="box_4">
+          <h1 style="text-align: center">HTTP</h1>
+          <p style="text-align: center">
+            The Hypertext Transfer Protocol (HTTP) is an application layer
+            protocol in the Internet protocol suite model for distributed,
+            collaborative, hypermedia information systems. HTTP is the
+            foundation of data communication for the World Wide Web, where
+            hypertext documents include hyperlinks to other resources that the
+            user can easily access, for example by a mouse click or by tapping
+            the screen in a web browser.
+          </p>
+        </div>
+
+        <div class="box_4">
+          <h1 style="text-align: center">HTML CSS</h1>
+          <p>Some text inside the box.</p>
+        </div>
+
+        <div class="box_4">
+          <h1 style="text-align: center">JAVASCRIPT</h1>
+          <p>Some text inside the box.</p>
+        </div>
+
+        <div class="box_4">
+          <img
+            src="./assests/go.png"
+            alt="go"
+            style="width: 80%; padding-left: 10%; opacity: 0.6"
+          />
+          <h1 style="text-align: center">GOLANG</h1>
+          <p>Some text inside the box.</p>
+        </div>
       </div>
 
-      <div class="box_4">
-        <h1 style="text-align: center">JAVASCRIPT</h1>
-        <p>Some text inside the box.</p>
+      <!-- BOOKS -->
+      <div
+        style="
+          background-color: rgb(200, 222, 224);
+          padding: 10px;
+          margin: 20px;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <h1 id="book-title" class="book-title">MOST POPULAR BOOKS</h1>
+        <div class="main">
+          <div class="box_3">
+            <div class="info">
+              <img
+                style="
+                  width: 100%;
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                "
+                src="./assests/React.jpg"
+                alt="react"
+              />
+              <h1 style="margin: 40px">Road to React</h1>
+              <p style="margin: 20px">by Robin Wieruch</p>
+              <p style="margin: 20px">Seventh edition</p>
+              <p style="margin-top: 80px">Published at 2020</p>
+            </div>
+
+            <div class="price">
+              <h2 style="margin-top: 65%">Price : 30$</h2>
+              <div class="book-button">
+                <a href="#popup1" style="color: aliceblue;text-decoration: none;">BUY</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <h2>Here i am</h2>
+              <a class="close" href="#book-title">&times;</a>
+              <div class="content">
+                Thank to pop me out of that button, but now i'm done so you can close this window.
+              </div>
+            </div>
+          </div>
+
+          <div class="box_3">
+            <p>Some text inside the box.</p>
+          </div>
+
+          <div class="box_3">
+            <p>Some text inside the box.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="box_4">
-        <img src="./assests/go.png" alt="go" style="width: 80%; padding-left: 10%;opacity: 0.6;">
-        <h1 style="text-align: center">GOLANG</h1>
-        <p>Some text inside the box.</p>
-      </div>
-    </div>
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="box_2">
+          <p>Some text inside the box.</p>
+        </div>
 
-    <div class="main">
-      <div class="box_3">
-        <p>Some text inside the box.</p>
-      </div>
-
-      <div class="box_3">
-        <p>Some text inside the box.</p>
-      </div>
-
-      <div class="box_3">
-        <p>Some text inside the box.</p>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="box_2">
-        <p>Some text inside the box.</p>
-      </div>
-
-      <div class="box_2">
-        <p>Some text inside the box.</p>
+        <div class="box_2">
+          <p>Some text inside the box.</p>
+        </div>
       </div>
     </div>
   </body>

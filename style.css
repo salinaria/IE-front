@@ -69,13 +69,131 @@
     border: 0px;
   }
 
+
+
+
   .main{
-    background-color:var(--c4);
     padding: 10px;
     margin: var(--margin-all);
     display: flex;
     flex-direction: row;
   }
+
+  .box_4 {
+    float: left;
+    width: calc(25%);
+    padding: 20px;
+    margin: var(--margin-in);
+    border-radius: 10px;
+    background-color:rgb(237, 242, 244,0.8);;
+    color: var(--c4);
+  }  
+  .box_4:hover{
+    transform:translateY(-15px);
+  }
+
+
+
+
+  .box_3 {
+    float: left;
+    position: relative;
+    height: 500px;
+    width: calc(33.3% - 20px);
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin: calc(var(--margin-all) + 30px);
+    background-color:var(--c1);
+    color: var(--c4);
+    text-align: center;
+  }
+  .box_3:hover{
+    background-color: var(--c4);
+  }
+  .box_3:hover > .info{
+    display: none;
+  }
+  .box_3:hover > .price{
+    display: block;
+  }
+  .price{
+    color: var(--c1);
+    display: none;
+  }
+  .book-title{
+    text-align: center;
+    margin: 30px;
+    color:var(--c4);
+    font-size: 40px;
+  }
+  .book-title:hover{
+    color: var(--c3);
+  }
+
+  .book-button{
+    background-color: var(--c3);
+    border: 0px;
+    color: var(--c1);
+    width: 50%;
+    margin: 25%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding:10px;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(5px);
+    background-color: rgb(0, 0, 0,0.6);
+    transition: opacity 0.5s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: var(--c2);
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+
+
 
   .footer {
     background-color:var(--c2) ;
@@ -93,26 +211,4 @@
     margin-bottom: 0px;
     background-color:var(--c1);
     color: var(--c2);
-  }
-  
-  .box_3 {
-    float: left;
-    width: calc(33.3% - 20px);
-    padding: 20px;
-    margin: var(--margin-in);
-    background-color:var(--c3);
-    color: var(--c4);
-  }
-  
-  .box_4 {
-    float: left;
-    width: calc(25%);
-    padding: 20px;
-    margin: var(--margin-in);
-    border-radius: 10px;
-    background-color:rgb(237, 242, 244,0.8);;
-    color: var(--c4);
-  }  
-  .box_4:hover{
-    transform:translateY(-15px);
   }
