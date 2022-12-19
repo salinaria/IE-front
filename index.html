@@ -15,7 +15,7 @@
         <div class="header-text-big">E N G I N E E R I N G</div>
         <div class="header-text-small">IS WHAT WE ARE GOING TO</div>
         <div class="header-text-small">LEARN IN THIS COURSE</div>
-        <button class="header-button">SEE THIS COURSE RELATED BOOKS</button>
+        <button class="header-button" onclick="location.href='#books'">SEE THIS COURSE RELATED BOOKS</button>
       </div>
 
       <!-- LECTURES -->
@@ -24,9 +24,9 @@
         style="
           background: linear-gradient(
               to bottom right,
-              rgba(213, 51, 213, 0.7),
-              rgb(0, 0, 255, 0.7),
-              rgba(128, 0, 6, 0.7)
+              rgba(213, 51, 213, 0.6),
+              rgb(0, 0, 255, 0.6),
+              rgba(0, 128, 23, 0.6)
             ),
             url('./assests/image.png');
           background-repeat: no-repeat;
@@ -68,7 +68,7 @@
       </div>
 
       <!-- BOOKS -->
-      <div
+      <div id = 'books'
         style="
           background-color: rgb(200, 222, 224);
           padding: 10px;
@@ -98,18 +98,45 @@
 
             <div class="price">
               <h2 style="margin-top: 65%">Price : 30$</h2>
-              <div class="book-button">
-                <a href="#popup1" style="color: aliceblue;text-decoration: none;">BUY</a>
-              </div>
+              <button class="book-button" onclick="location.href='#popup1'">
+                BUY
+              </button>
             </div>
           </div>
 
           <div id="popup1" class="overlay">
             <div class="popup">
-              <h2>Here i am</h2>
-              <a class="close" href="#book-title">&times;</a>
-              <div class="content">
-                Thank to pop me out of that button, but now i'm done so you can close this window.
+              <img
+                src="./assests/react-book.jpg"
+                alt="react-book"
+                style="height: 100%; border-radius: inherit"
+              />
+              <div class="popup-text">
+                <h2>START READING NOW</h2>
+                <h3>
+                  IMPORTANT-PLEASE READ THESE TERMS BEFORE BUYING THE BOOK
+                </h3>
+                <a class="close" href="#books">&times;</a>
+                <div class="contenti">
+                  <div class="content">
+                    In "The Road to React" you will learn about all the
+                    fundamentals of React.js with Hooks while building a
+                    full-blown React application step by step. While you create
+                    the React application, every chapter will introduce you to a
+                    new React key feature.
+                  </div>
+                  <div class="content">
+                    However, there is more than only the fundamentals: The book
+                    dives into related topics (e.g. React with TypeScript,
+                    Testing, Performance Optimizations) and advanced feature
+                    implementations like client- and server-side searching. At
+                    the end of the book, you will have a fully working deployed
+                    React application.
+                  </div>
+                </div>
+                <button class="book-button" onclick="location.href='#popup1'">
+                  BUY NOW
+                </button>
               </div>
             </div>
           </div>

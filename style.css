@@ -16,7 +16,7 @@
   
   body{
     background-color: var(--c1);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Helvetica;
   }
   
   .header{
@@ -85,7 +85,7 @@
     padding: 20px;
     margin: var(--margin-in);
     border-radius: 10px;
-    background-color:rgb(237, 242, 244,0.8);;
+    background-color:rgb(237, 242, 244,0.7);;
     color: var(--c4);
   }  
   .box_4:hover{
@@ -122,7 +122,7 @@
   }
   .book-title{
     text-align: center;
-    margin: 30px;
+    margin: 20px;
     color:var(--c4);
     font-size: 40px;
   }
@@ -140,6 +140,13 @@
     font-size: 15px;
     padding:10px;
   }
+  .book-button:hover{
+    background-color: var(--c2);
+    color: var(--c4);
+  }
+  
+  
+  
   
   .overlay {
     position: fixed;
@@ -160,37 +167,73 @@
   }
   
   .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    background:var(--c1);
     border-radius: 5px;
-    width: 30%;
+    width: 70%;
+    height: 70%;
     position: relative;
     transition: all 5s ease-in-out;
   }
-  
+  .popup-text{
+    margin: 20px;
+  }
   .popup h2 {
     margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+    color: var(--c3);
+  }
+  
+  .popup h3 {
+    margin-top: 0;
+    color: var(--c4);
+    font-size: 14px;
   }
   .popup .close {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 15px;
+    right: 20px;
     transition: all 200ms;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: var(--c4);
   }
   .popup .close:hover {
     color: var(--c2);
   }
   .popup .content {
-    max-height: 30%;
+    max-width: 40%;
+    max-height: 80%;
     overflow: auto;
+    font-size: 14px;
+    margin-right: 40px;
+    color: var(--c4);
   }
+  
+  .popup .contenti {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .popup .book-button{
+    background-color: var(--c3);
+    border: 0px;
+    color: var(--c1);
+    width: 30%;
+    margin: 0px;
+    border-radius: 20px;
+    font-size: 15px;
+    padding:10px;
+  }
+  .popup .book-button:hover{
+    background-color: var(--c2);
+    color: var(--c4);
+  }
+
 
 
 
