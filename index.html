@@ -10,17 +10,20 @@
   <body>
     <div class="after-button">
       <!--- HEADER --->
-      <div class="header" style="background-color: #2b2d42">
+      <div class="header">
         <div class="header-text-big">I N T E R N E T</div>
         <div class="header-text-big">E N G I N E E R I N G</div>
         <div class="header-text-small">IS WHAT WE ARE GOING TO</div>
         <div class="header-text-small">LEARN IN THIS COURSE</div>
-        <button class="header-button" onclick="location.href='#books'">SEE THIS COURSE RELATED BOOKS</button>
+        <button class="header-button" onclick="location.href='#books'">
+          SEE THIS COURSE RELATED BOOKS
+        </button>
       </div>
 
       <!-- LECTURES -->
-      <div id = 'lectures'
-        class="main"
+      <div
+        id="lectures"
+        class="main-lecture"
         style="
           background: linear-gradient(
               to bottom right,
@@ -34,6 +37,11 @@
         "
       >
         <div class="box_4">
+          <img
+            src="./assests/http.png"
+            alt="go"
+            style="width: 80%; margin-left: 10%; opacity: 0.7"
+          />
           <h1 style="text-align: center">HTTP</h1>
           <p style="text-align: center">
             The Hypertext Transfer Protocol (HTTP) is an application layer
@@ -47,11 +55,21 @@
         </div>
 
         <div class="box_4">
+          <img
+            src="./assests/css.png"
+            alt="go"
+            style="width: 30%; margin-left: 35%; opacity: 0.7"
+          />
           <h1 style="text-align: center">HTML CSS</h1>
           <p>Some text inside the box.</p>
         </div>
 
         <div class="box_4">
+          <img
+            src="./assests/js.png"
+            alt="go"
+            style="width: 30%; margin-left: 35%; opacity: 0.7"
+          />
           <h1 style="text-align: center">JAVASCRIPT</h1>
           <p>Some text inside the box.</p>
         </div>
@@ -60,7 +78,7 @@
           <img
             src="./assests/go.png"
             alt="go"
-            style="width: 80%; padding-left: 10%; opacity: 0.6"
+            style="width: 90%; margin-left: 5%; opacity: 0.5"
           />
           <h1 style="text-align: center">GOLANG</h1>
           <p>Some text inside the box.</p>
@@ -68,38 +86,28 @@
       </div>
 
       <!-- BOOKS -->
-      <div id = 'books'
-        style="
-          background-color: rgb(200, 222, 224);
-          padding: 10px;
-          margin: 20px;
-          display: flex;
-          flex-direction: column;
-        "
-      >
-        <h1 id="book-title" class="book-title">MOST POPULAR BOOKS</h1>
-        <div class="main">
-          <div class="box_3">
-            <div class="info">
-              <img
-                style="
-                  width: 100%;
-                  border-radius:inherit;
-                "
-                src="./assests/React.jpg"
-                alt="react"
-              />
-              <h1 style="margin: 40px">Road to React</h1>
-              <p style="margin: 20px">by Robin Wieruch</p>
-              <p style="margin: 20px">Seventh edition</p>
-              <p style="margin-top: 80px">Published at 2020</p>
-            </div>
-
-            <div class="price">
-              <h2 style="margin-top: 65%">Price : 30$</h2>
-              <button class="book-button" onclick="location.href='#popup1'">
-                BUY
-              </button>
+      <div id="books" class="books">
+        <h1 style="width: 40%;margin-left: 30%;">MOST POPULAR BOOKS</h1>
+        <div class="main-book">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  style="width: 100%; border-radius: inherit"
+                  src="./assests/React.png"
+                  alt="react"
+                />
+                <h1 style="margin: 40px">Road to React</h1>
+                <p style="margin: 20px">by Robin Wieruch</p>
+                <p style="margin: 20px">Seventh edition</p>
+                <p style="margin-top: 80px">Published at 2020</p>
+              </div>
+              <div class="flip-card-back">
+                <h2 style="margin-top: 65%">Price : 30$</h2>
+                <button class="book-button" onclick="location.href='#popup1'">
+                  BUY
+                </button>
+              </div>
             </div>
           </div>
 
@@ -111,41 +119,75 @@
                 style="height: 100%; border-radius: inherit"
               />
               <div class="popup-text">
-                <h2>START READING NOW</h2>
+                <h1>START READING NOW</h1>
                 <h3>
                   IMPORTANT-PLEASE READ THESE TERMS BEFORE BUYING THE BOOK
                 </h3>
                 <a class="close" href="#books">&times;</a>
-                <div class="contenti">
-                  <div class="content">
-                    In "The Road to React" you will learn about all the
-                    fundamentals of React.js with Hooks while building a
-                    full-blown React application step by step. While you create
-                    the React application, every chapter will introduce you to a
-                    new React key feature.
-                  </div>
-                  <div class="content">
-                    However, there is more than only the fundamentals: The book
-                    dives into related topics (e.g. React with TypeScript,
-                    Testing, Performance Optimizations) and advanced feature
-                    implementations like client- and server-side searching. At
-                    the end of the book, you will have a fully working deployed
-                    React application.
-                  </div>
+                <div class="content">
+                  In "The Road to React" you will learn about all the
+                  fundamentals of React.js with Hooks while building a
+                  full-blown React application step by step. While you create
+                  the React application, every chapter will introduce you to a
+                  new React key feature. However, there is more than only the
+                  fundamentals: The book dives into related topics (e.g. React
+                  with TypeScript, Testing, Performance Optimizations) and
+                  advanced feature implementations like client- and server-side
+                  searching. At the end of the book, you will have a fully
+                  working deployed React application.
                 </div>
-                <button class="book-button" onclick="location.href='#popup1'">
+                <button
+                  class="book-buttoni"
+                  onclick="location.href='https://www.amazon.com/Road-learn-React-pragmatic-React-js/dp/172004399X/ref=d_pd_sbs_sccl_2_3/130-5751593-0029724?pd_rd_w=m9yJh&content-id=amzn1.sym.3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=MN81G3T0MAX9FR9FAENV&pd_rd_wg=XsyuS&pd_rd_r=c3fff6b6-0e60-41bd-b038-2e16c81b5390&pd_rd_i=172004399X&psc=1'"
+                >
                   BUY NOW
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="box_3">
-            <p>Some text inside the box.</p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  style="width: 100%; border-radius: inherit"
+                  src="./assests/React.png"
+                  alt="react"
+                />
+                <h1 style="margin: 40px">Road to React</h1>
+                <p style="margin: 20px">by Robin Wieruch</p>
+                <p style="margin: 20px">Seventh edition</p>
+                <p style="margin-top: 80px">Published at 2020</p>
+              </div>
+              <div class="flip-card-back">
+                <h2 style="margin-top: 65%">Price : 30$</h2>
+                <button class="book-button" onclick="location.href='#popup1'">
+                  BUY
+                </button>
+              </div>
+            </div>
           </div>
 
-          <div class="box_3">
-            <p>Some text inside the box.</p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  style="width: 100%; border-radius: inherit"
+                  src="./assests/React.png"
+                  alt="react"
+                />
+                <h1 style="margin: 40px">Road to React</h1>
+                <p style="margin: 20px">by Robin Wieruch</p>
+                <p style="margin: 20px">Seventh edition</p>
+                <p style="margin-top: 80px">Published at 2020</p>
+              </div>
+              <div class="flip-card-back">
+                <h2 style="margin-top: 65%">Price : 30$</h2>
+                <button class="book-button" onclick="location.href='#popup1'">
+                  BUY
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -153,7 +195,7 @@
       <!-- FOOTER -->
       <div class="footer">
         <div class="box_2">
-          <hr style="opacity: 0.4;width: 70%;margin-left: 5px;">
+          <hr class="hr" />
           <a class="links" href="#lectures">CLASS INFO</a>
           <a class="links">CONTACT US</a>
           <a class="links">PRIVACY POLICY</a>
@@ -161,8 +203,11 @@
         </div>
 
         <div class="box_2">
-          <hr style="opacity: 0.4;width: 70%;margin-left: 5px;">
-          <p>© 2022 Built by Ali Ansari for Internet Engineering course in Amirkabir university of technology</p>
+          <hr class="hr" />
+          <a class="links" href="#"
+            >© 2022 Built by ALI ANSARI for Internet Engineering course in
+            Amirkabir University of Technology</a
+          >
         </div>
       </div>
     </div>
