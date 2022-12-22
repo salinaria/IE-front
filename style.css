@@ -2,7 +2,7 @@
 
 :root {
   --margin-all: 20px;
-  --margin-in: 50px;
+  --margin-in: 2%;
   --padding: 20px;
   --c1: rgb(237, 242, 244);
   --c2: #e63946;
@@ -76,7 +76,7 @@ body {
 }
 
 .main-lecture {
-  padding: 10px;
+  padding: 5%;
   margin: var(--margin-all);
   display: flex;
   flex-direction: row;
@@ -86,8 +86,10 @@ body {
   float: left;
   width: calc(25%);
   padding: 20px;
+  text-align: center;
   margin: var(--margin-in);
   border-radius: 10px;
+  transition: all 500ms;
   background-color: rgb(237, 242, 244, 0.7);
   color: var(--c4);
 }
@@ -97,10 +99,14 @@ body {
 
 .box_4 p {
   color: rgb(104, 105, 106);
+  font-style: normal;
+  font-size: 18px;
 }
 
 .box_4:hover {
-  transition: all 200ms;
+  transition: all 500ms;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 30%;
   transform: translateY(-15px);
 }
 
@@ -118,32 +124,32 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  transition: all 5s;
+  transition: all 0.5s;
   margin: 20px;
-  padding: 0px;
   border-radius: 5px;
   font-size: 40px;
 }
 .books h1:hover {
   background: linear-gradient(to left,var(--c2),blue);
+  transition: all 0.5s;
+  font-size: 45px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .main-book {
-  padding-right: 7%;
-  padding-left: 7%;
-  margin: var(--margin-all);
   display: flex;
   flex-direction: row;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .flip-card {
   background-color: transparent;
-  width: calc(33% - 40px);
+  width: calc(30%);
   height: 500px;
-  margin: var(--margin-in);
+  margin: 3%;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 .flip-card h1 {
@@ -229,7 +235,7 @@ body {
   flex-direction: row;
   margin: auto;
   margin-top: 50px;
-  border-radius: 10px;
+  border-radius: 0px;
   background: var(--c1);
   border-radius: 15px;
   width: 70%;
@@ -240,6 +246,7 @@ body {
 .popup-text {
   margin: 20px;
 }
+
 .popup h2 {
   margin-top: 0;
   color: var(--c3);
@@ -283,6 +290,9 @@ body {
   margin-left: 0px;
   margin-top: 5px ;
   margin-bottom: 40px;
+}
+.popup h1:hover{
+  font-size: 30px;
 }
 .book-buttoni {
   background-color:var(--c4);

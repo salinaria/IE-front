@@ -10,7 +10,7 @@
   <body>
     <div class="after-button">
       <!--- HEADER --->
-      <div class="header">
+      <div class="header" style="background-image: url('./assests/Header.jpg')">
         <div class="header-text-big">I N T E R N E T</div>
         <div class="header-text-big">E N G I N E E R I N G</div>
         <div class="header-text-small">IS WHAT WE ARE GOING TO</div>
@@ -31,79 +31,103 @@
               rgb(0, 0, 255, 0.6),
               rgba(0, 128, 23, 0.6)
             ),
-            url('./assests/image.png');
+            url('./assests/Background.jpg');
           background-repeat: no-repeat;
           background-size: cover;
         "
       >
         <div class="box_4">
           <img
-            src="./assests/http.png"
-            alt="go"
-            style="width: 80%; margin-left: 10%; opacity: 0.7"
+            src="./assests/http_icon.png"
+            alt="http"
+            style="
+              width: 70%;
+              opacity: 0.5;
+              margin-bottom: 25px;
+              margin-top: 25px;
+            "
           />
           <h1 style="text-align: center">HTTP</h1>
           <p style="text-align: center">
             The Hypertext Transfer Protocol (HTTP) is an application layer
             protocol in the Internet protocol suite model for distributed,
             collaborative, hypermedia information systems. HTTP is the
-            foundation of data communication for the World Wide Web, where
-            hypertext documents include hyperlinks to other resources that the
-            user can easily access, for example by a mouse click or by tapping
-            the screen in a web browser.
+            foundation of data communication for the World Wide Web.
           </p>
         </div>
 
         <div class="box_4">
           <img
-            src="./assests/css.png"
-            alt="go"
-            style="width: 30%; margin-left: 35%; opacity: 0.7"
+            src="./assests/css_icon.png"
+            alt="css"
+            style="width: 35%; opacity: 0.5"
           />
           <h1 style="text-align: center">HTML CSS</h1>
-          <p>Some text inside the box.</p>
+          <p>
+            HTML (the Hypertext Markup Language) and CSS (Cascading Style
+            Sheets) are two of the core technologies for building Web pages.
+            HTML provides the structure of the page, CSS the (visual and aural)
+            layout, for a variety of devices.
+          </p>
         </div>
 
         <div class="box_4">
           <img
-            src="./assests/js.png"
-            alt="go"
-            style="width: 30%; margin-left: 35%; opacity: 0.7"
+            src="./assests/js_icon.png"
+            alt="js"
+            style="width: 35%; opacity: 0.5"
           />
           <h1 style="text-align: center">JAVASCRIPT</h1>
-          <p>Some text inside the box.</p>
+          <p>
+            JavaScript, often abbreviated as JS, is a programming language that
+            is one of the core technologies of the World Wide Web, alongside
+            HTML and CSS. As of 2022, 98% of websites use JavaScript on the
+            client side for webpage behavior, often incorporating third-party
+            libraries.
+          </p>
         </div>
 
         <div class="box_4">
           <img
-            src="./assests/go.png"
+            src="./assests/go_icon.png"
             alt="go"
-            style="width: 90%; margin-left: 5%; opacity: 0.5"
+            style="
+              width: 80%;
+              opacity: 0.5;
+              margin-bottom: 10px;
+              margin-top: 10px;
+              margin-right: 30px;
+            "
           />
           <h1 style="text-align: center">GOLANG</h1>
-          <p>Some text inside the box.</p>
+          <p>
+            Go is a statically typed, compiled programming language designed at
+            Google by Robert Griesemer, Rob Pike, and Ken Thompson. It is
+            syntactically similar to C, but with memory safety, garbage
+            collection, structural typing, and CSP-style concurrency.
+          </p>
         </div>
       </div>
 
       <!-- BOOKS -->
       <div id="books" class="books">
-        <h1 style="width: 40%;margin-left: 30%;">MOST POPULAR BOOKS</h1>
+        <h1 style="width: 40%; margin-left: 30%">MOST POPULAR BOOKS</h1>
         <div class="main-book">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img
-                  style="width: 100%; border-radius: inherit"
-                  src="./assests/React.png"
+                  style="width: 100%; height: 40%; border-radius: inherit"
+                  src="./assests/Book1-2.png"
                   alt="react"
                 />
-                <h1 style="margin: 40px">Road to React</h1>
-                <p style="margin: 20px">by Robin Wieruch</p>
+                <h1 style="margin: 40px">JavaScript Guide</h1>
+                <p style="margin: 20px">by David Flanagan</p>
                 <p style="margin: 20px">Seventh edition</p>
                 <p style="margin-top: 80px">Published at 2020</p>
               </div>
               <div class="flip-card-back">
-                <h2 style="margin-top: 65%">Price : 30$</h2>
+                <h2 style="margin-top: 65%">Price : $30.00</h2>
                 <button class="book-button" onclick="location.href='#popup1'">
                   BUY
                 </button>
@@ -114,12 +138,72 @@
           <div id="popup1" class="overlay">
             <div class="popup">
               <img
-                src="./assests/react-book.jpg"
+                src="./assests/Book1-1.jpg"
                 alt="react-book"
-                style="height: 100%; border-radius: inherit"
+                style="height: 100%"
               />
               <div class="popup-text">
-                <h1>START READING NOW</h1>
+                <h1 style="width: fit-content">START READING NOW</h1>
+                <h3>
+                  IMPORTANT-PLEASE READ THESE TERMS BEFORE BUYING THE BOOK
+                </h3>
+                <a class="close" href="#books">&times;</a>
+                <div class="content">
+                  JavaScript is the programming language of the web and is used
+                  by more software developers today than any other programming
+                  language. For nearly 25 years this best seller has been the
+                  go-to guide for JavaScript programmers. The seventh edition is
+                  fully updated to cover the 2020 version of JavaScript, and new
+                  chapters cover classes, modules, iterators, generators,
+                  Promises, async/await, and metaprogramming. You'll find
+                  illuminating and engaging example code throughout. This book
+                  is for programmers who want to learn JavaScript and for web
+                  developers who want to take their understanding and mastery to
+                  the next level. It begins by explaining the JavaScript
+                  language itself, in detail, from the bottom up. It then builds
+                  on that foundation to cover the web platform and Node.js.
+                </div>
+                <button
+                  class="book-buttoni"
+                  onclick="location.href='https://www.amazon.com/gp/product/1491952024/'"
+                >
+                  BUY NOW
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  style="width: 100%; height: 40%"
+                  src="./assests/Book2-2.jpg"
+                  alt="react"
+                />
+                <h1 style="margin: 40px">Road to React</h1>
+                <p style="margin: 20px">by Robin Wieruch</p>
+                <p style="margin: 20px">Seventh edition</p>
+                <p style="margin-top: 80px">Published at 2020</p>
+              </div>
+              <div class="flip-card-back">
+                <h2 style="margin-top: 65%">Price : $29.99</h2>
+                <button class="book-button" onclick="location.href='#popup2'">
+                  BUY
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup2" class="overlay">
+            <div class="popup">
+              <img
+                src="./assests/Book2-1.jpg"
+                alt="react-book"
+                style="height: 100%"
+              />
+              <div class="popup-text">
+                <h1 style="width: fit-content">START READING NOW</h1>
                 <h3>
                   IMPORTANT-PLEASE READ THESE TERMS BEFORE BUYING THE BOOK
                 </h3>
@@ -150,41 +234,56 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img
-                  style="width: 100%; border-radius: inherit"
-                  src="./assests/React.png"
+                  style="width: 100%; height: 40%"
+                  src="./assests/Book3-2.png"
                   alt="react"
                 />
-                <h1 style="margin: 40px">Road to React</h1>
-                <p style="margin: 20px">by Robin Wieruch</p>
-                <p style="margin: 20px">Seventh edition</p>
-                <p style="margin-top: 80px">Published at 2020</p>
+                <h1 style="margin: 40px">Introducing Go</h1>
+                <p style="margin: 20px">by Caleb Doxsey</p>
+                <p style="margin: 20px">First edition</p>
+                <p style="margin-top: 80px">Published at 2016</p>
               </div>
               <div class="flip-card-back">
-                <h2 style="margin-top: 65%">Price : 30$</h2>
-                <button class="book-button" onclick="location.href='#popup1'">
+                <h2 style="margin-top: 65%">Price : 20,07 €</h2>
+                <button class="book-button" onclick="location.href='#popup3'">
                   BUY
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img
-                  style="width: 100%; border-radius: inherit"
-                  src="./assests/React.png"
-                  alt="react"
-                />
-                <h1 style="margin: 40px">Road to React</h1>
-                <p style="margin: 20px">by Robin Wieruch</p>
-                <p style="margin: 20px">Seventh edition</p>
-                <p style="margin-top: 80px">Published at 2020</p>
-              </div>
-              <div class="flip-card-back">
-                <h2 style="margin-top: 65%">Price : 30$</h2>
-                <button class="book-button" onclick="location.href='#popup1'">
-                  BUY
+          <div id="popup3" class="overlay">
+            <div class="popup">
+              <img
+                src="./assests/Book3-1.jpg"
+                alt="react-book"
+                style="height: 100%"
+              />
+              <div class="popup-text">
+                <h1 style="width: fit-content">START READING NOW</h1>
+                <h3>
+                  IMPORTANT-PLEASE READ THESE TERMS BEFORE BUYING THE BOOK
+                </h3>
+                <a class="close" href="#books">&times;</a>
+                <div class="content">
+                  Perfect for beginners familiar with programming basics, this
+                  hands-on guide provides an easy introduction to Go, the
+                  general-purpose programming language from Google. Author Caleb
+                  Doxsey covers the languageâ s core features with step-by-step
+                  instructions and exercises in each chapter to help you
+                  practice what you learn. Go is a general-purpose programming
+                  language with a clean syntax and advanced features, including
+                  concurrency. This book provides the one-on-one support you
+                  need to get started with the language, with short, easily
+                  digestible chapters that build on one another. By the time you
+                  finish this book, not only will you be able to write real Go
+                  programs, you'll be ready to tackle advanced techniques.
+                </div>
+                <button
+                  class="book-buttoni"
+                  onclick="location.href='https://www.amazon.fr/dp/1491941952?psc=1&th=1&linkCode=gs2&tag=vhpoet0ca-21'"
+                >
+                  BUY NOW
                 </button>
               </div>
             </div>
@@ -212,18 +311,29 @@
       </div>
 
       <!--MENU-->
-      <button class='menu-icon' onclick="location.href = '#menu'">
-        <hr class="menu-hr">
-        <hr class="menu-hr">
-        <hr class="menu-hr">
+      <button class="menu-icon" onclick="location.href = '#menu'">
+        <hr class="menu-hr" />
+        <hr class="menu-hr" />
+        <hr class="menu-hr" />
       </button>
-      <div id = menu class="menu">
+      <div id="menu" class="menu">
         <a class="close" href="#">&times;</a>
-        <a class="links" style="font-size: 30px;margin-top: 50px;" href="#">01 START</a>
-        <a class="links" style="font-size: 30px;margin-top: 50px;" href="#lectures">02 COURSE LECTURES</a>
-        <a class="links" style="font-size: 30px;margin-top: 50px;margin-bottom: 50px;" href="#books">03 RELATED BOOKS</a>
+        <a class="links" style="font-size: 30px; margin-top: 50px" href="#"
+          >01 START</a
+        >
+        <a
+          class="links"
+          style="font-size: 30px; margin-top: 50px"
+          href="#lectures"
+          >02 COURSE LECTURES</a
+        >
+        <a
+          class="links"
+          style="font-size: 30px; margin-top: 50px; margin-bottom: 50px"
+          href="#books"
+          >03 RELATED BOOKS</a
+        >
       </div>
-
     </div>
   </body>
 </html>
