@@ -133,6 +133,7 @@ body {
   background: linear-gradient(to left,var(--c2),blue);
   transition: all 0.5s;
   font-size: 45px;
+  margin-bottom: 15px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -293,6 +294,7 @@ body {
 }
 .popup h1:hover{
   font-size: 30px;
+  margin-bottom: 40px;
 }
 .book-buttoni {
   background-color:var(--c4);
